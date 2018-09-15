@@ -1,0 +1,106 @@
+
+@media only screen and (max-width:650px){
+    #head-search{
+        display: none;
+    }
+}
+
+header{
+    background-color: #026aa7;
+    color: #fff;
+    padding: 4px;
+    height: 40px;
+    position: relative;
+}
+
+#boards-btn{
+    min-width: 85px;
+    /* justify-content: space-around; */
+}
+#head-title, a > span , #boards-btn a > span{
+    margin-right: 8px;
+}
+#head-title, a > span:last-child, #boards-btn a > span:last-child{
+    margin-right: 0;
+}
+
+.elements{
+    float: left;
+    height: 32px;
+    padding: 0 10px;
+}
+.fa-trello{
+}
+
+.icon-box{
+    display: inline-block;
+    height: 32px;
+    font-size: 16px;
+    line-height: 32px;
+    width: 32px;
+    text-align: center;
+}
+#name-char{
+    color: #444;
+    height: 32px;
+    font-size: 12px;
+    line-height: 32px;
+    font-weight: 700;
+    width: 32px;
+    display: inline-block;
+    text-align: center;
+}
+#right-icon-box{
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+#right-icon-box > span{
+    margin-left: 10px;
+}
+#head-title{
+    position: absolute;
+    left: 50%;
+    height: 32px;
+    line-height: 32px;
+    opacity: 0.5;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.elements input{ 
+    transition: .4s ease;
+    background-color: hsla(0,0%,100%,.3);
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 4px;
+    border-radius: 4px 0 0 4px;
+    width: 200px;
+}
+.searchFocus input{
+    background-color: #fff;
+    width: 290px;
+    transition: 0.4s ease;
+}
+
+#head-search span{
+    transition: .4s ease;
+    background: hsla(0,0%,100%,.3);
+    border-radius: 0 4px 4px 0;
+    display: inline-block;
+    height: 32px;
+    position: absolute;
+    padding: 7px 6px 0 0;
+
+}
+#head-search .elements{
+    position: relative;
+}
+
+.fa-trello{
+    font-size: 18px;
+}
+#head-title .fa-trello{
+    font-size: 20px;
+}

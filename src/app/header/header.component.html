@@ -1,0 +1,41 @@
+<header>
+  <div class="" id="boards-btn">
+    <a class="elements font-bold font-14 tr-btn dis-flex align-items-center">
+      <span><i class="fa fa-trello font-18"></i>
+      </span>
+      <span>Boards</span>
+    </a>
+  </div>
+  <div id="head-search">
+    <a class="elements"
+    [class.searchFocus]="isSearchFocussed">
+      <input type="text" 
+      name="search"
+      (focus)="onSearchFocus()"
+      (focusout)="onSearchFocusOut()">
+      <span [style.background-color]="isSearchFocussed?'#fff':initial">
+        <i
+        [style.color]="isSearchFocussed?'#000':initial" 
+        class="fa fa-search"></i>
+      </span>
+
+    </a>
+  </div>
+  <div>
+    <a id="head-title">
+      <a class="font-bold dis-flex align-items-center">
+        <span><i class="fa fa-trello font-18"></i>
+        </span>
+        <span>Trello</span>
+      </a>
+    </a>
+  </div>
+
+
+  <div id="right-icon-box">
+    <span class="icon-box tr-btn">
+      <i class="fa fa-bell font-18 "></i>
+    </span>
+    <span class="border-circle back-grey" id="name-char">M</span>
+  </div>
+</header>
