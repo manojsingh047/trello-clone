@@ -6,6 +6,10 @@ import { AppRoutingModule } from './/app-routing.module';
 import { BoardComponent } from './board/board.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { fakeBackendProvider } from './service/fake-backend.service';
+import { BoardService } from './service/board.service';
+import { LocalStorageService } from './service/local-storage.service';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,9 +20,14 @@ import { HeaderComponent } from './header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    BoardService,
+    LocalStorageService,
+    fakeBackendProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
