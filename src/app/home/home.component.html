@@ -1,3 +1,16 @@
-<p>
-  home works!
-</p>
+<section>
+  <div class="title">
+    <!-- <i class="fa fa-sticky-note"></i> -->
+    <span>Boards</span>
+  </div> 
+  <div class="boards-container dis-flex"
+    *ngIf="isBoards">
+    <div *ngFor="let board of boards">
+      {{boards.title | async}}
+    </div>
+  </div>
+
+  <div *ngIf="!isBoards">
+    Fetching...
+  </div>
+</section>

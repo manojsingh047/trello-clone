@@ -12,6 +12,9 @@ header{
     height: 40px;
     position: relative;
 }
+span{
+    color: #fff;
+}
 
 #boards-btn{
     min-width: 85px;

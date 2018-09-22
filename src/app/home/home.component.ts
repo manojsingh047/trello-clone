@@ -28,8 +28,8 @@ export class HomeComponent implements OnInit, OnDestroy {
   boardSubscription(){
     this.boardSubs = this.boardService.boardObs.subscribe((boards:Board[]) => {
       if(boards){
-        console.log('boards',boards);
         this.boards = boards;
+        console.log('this.boards',this.boards);
         this.isBoards = true;
       }
     });

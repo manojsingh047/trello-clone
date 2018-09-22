@@ -2,12 +2,18 @@
 *{
     box-sizing: border-box
 }
-html,body,p,h1,h2,h3,h4,h5,h6{
+html,body,p,h1,h2,h3,h4,h5,h6,span{
     padding: 0;
     margin: 0;
     font-family: Helvetica Neue,Arial,Helvetica,sans-serif;
+    color: #17394d;
 }
-
+body{
+    background: #f5f6f7;
+}
+a{
+    text-decoration: none;
+}
 .dis-flex{
     display: flex;
 }
